@@ -1,5 +1,5 @@
 <?php 
-echo "[!] Tools ini berfungsi untuk mengambil detail sebuah item pada marketplace Blibli.com \n";
+echo "[!] Tools ini berfungsi untuk mengambil detail sebuah product pada marketplace Blibli.com \n";
 echo "[*] Output berupa file JSON.\n\n";
 echo "[?] Submit link BliBli.com :\n";
 $data = trim(fgets(STDIN));
@@ -8,9 +8,9 @@ $kata = explode('/p/', $data);
 $pecah = explode("/", $kata[1]);
 $pecahLagi = explode("?", $pecah[1]);
 $isi = $pecahLagi[0];
-getItems($isi);
+getProduct($isi);
 
-function getItems($isi){
+function getProduct($isi){
 $body = "https://www.blibli.com/backend/product-detail/products/".$isi."/_summary?defaultItemSku=&pickupPointCode=&cnc=false";
 $ch = curl_init();
 
