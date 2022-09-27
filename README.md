@@ -1,4 +1,4 @@
-# Blibli-getItemDetails
+# Blibli-getDetailProduct
 
 Tools ini berfungsi untuk mengambil detail sebuah product pada marketplace Blibli.com
 
